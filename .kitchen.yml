@@ -1,0 +1,21 @@
+---
+#<% require 'kitchen-sync' %>
+driver:
+  name: vagrant
+  network:
+  - ["private_network", {ip: "192.168.33.33"}]
+
+provisioner:
+  name: chef_zero
+  attributes:
+    automation: true
+
+platforms:
+  - name: ubuntu-14.04
+#  - name: centos-6.5
+
+suites:
+  - name: default
+    run_list:
+      - recipe[nifi::server]
+    attributes:

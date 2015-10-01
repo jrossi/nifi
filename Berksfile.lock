@@ -1,0 +1,9 @@
+DEPENDENCIES
+  nifi
+    path: .
+    metadata: true
+
+GRAPH
+  java (1.35.0)
+  nifi (0.1.0)
+    java (>= 0.0.0)
