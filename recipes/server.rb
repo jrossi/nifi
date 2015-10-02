@@ -8,11 +8,6 @@
 #
 execute 'apt-get update'
 
-node.set['java']['install_flavor'] = 'openjdk'
-node.set['java']['jdk_version'] = '7'
-
-include_recipe 'java::default'
-
 package 'curl' do
   action [:install]
 end
