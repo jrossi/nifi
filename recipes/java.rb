@@ -6,5 +6,5 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-
+execute 'apt-get update'
 include_recipe 'java::default'

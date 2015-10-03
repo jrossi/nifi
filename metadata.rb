@@ -7,3 +7,4 @@ long_description 'Installs/Configures nifi'
 version          '0.1.0'
 
 depends 'java'
+depends 'ark'

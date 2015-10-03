@@ -12,6 +12,6 @@ describe 'nifi::server' do
 end
 
 describe service('nifi') do
-  # it {should be_enabled}
+  it {should be_enabled}
   it {should be_running}
 end
