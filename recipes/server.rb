@@ -18,6 +18,10 @@ script "install_nifi" do
   user "root"
   code <<-EOH
   #{node['ark']['prefix_home']}/nifi/bin/nifi.sh install
-  service nifi start
   EOH
+end
+
+service 'nifi' do
+  action :enable
+  action :start
 end
