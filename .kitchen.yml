@@ -17,6 +17,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[nifi::java]
-      - recipe[nifi::server]
+      - recipe[nifi::default]
     attributes:

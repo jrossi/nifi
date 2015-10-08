@@ -2,7 +2,8 @@
 # Cookbook Name:: nifi
 # Recipe:: default
 #
-# Copyright (C) 2015 ULIVE / Scripps Networks Interactive
-#
-# All rights reserved - Do Not Redistribute
-#
+
+include_recipe 'nifi::_limits'
+include_recipe 'nifi::_sysctl'
+include_recipe 'nifi::java'
+include_recipe 'nifi::server'
