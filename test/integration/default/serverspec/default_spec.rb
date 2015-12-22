@@ -15,9 +15,12 @@ describe file('/proc/sys/vm/swappiness') do
   it { should contain 0 }
 end
 
-describe command('sysctl -a') do
-  its(:stdout) { should match '/^net\.ipv4\.tcp_fin_timeout=1/' }
-  its(:stdout) { should match '/^net\.ipv4\.ip_local_port_range=10000 65000/'}
+describe command('sudo sysctl -a | grep "net\.ipv4\.tcp_fin_timeout"') do
+  its(:stdout) { should contain '/^net\.ipv4\.tcp_fin_timeout = 1/' }
+end
+
+describe command('sudo sysctl -a | grep "net\.ipv4\.ip_local_port_range"') do
+  its(:stdout) { should contain '/^net\.ipv4\.ip_local_port_range = 10000\t65000\n/'}
 end
 
 # limits
