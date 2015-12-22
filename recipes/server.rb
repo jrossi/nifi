@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: nifi
-# Recipe:: default
+# Recipe:: server 
 #
 include_recipe 'nifi::_limits'
 include_recipe 'nifi::_sysctl'
