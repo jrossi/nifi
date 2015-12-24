@@ -4,7 +4,7 @@ maintainer_email 'me@mercedescoyle.com'
 license          'all_rights'
 description      'Installs/Configures nifi'
 long_description 'Installs/Configures nifi'
-version          '0.3.0'
+version          '0.3.1'
 
 supports 'ubuntu'
 
