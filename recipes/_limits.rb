@@ -2,10 +2,6 @@
 # Cookbook Name:: nifi
 # Recipe:: _limits
 #
-# Copyright (C) 2015 ULIVE / Scripps Networks Interactive
-#
-# All rights reserved - Do Not Redistribute
-#
 
 set_limit '*' do
   type 'hard'
