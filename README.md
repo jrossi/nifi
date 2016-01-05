@@ -28,12 +28,5 @@ Updates apt, includes java::default recipe.
 ### server
 Uses ark to install, enable, and start nifi; default nifi install directory is /opt/nifi.
 
-
-### _sysctl
-Sets Nifi recommended TCP settings and turns off swap for Ubuntu.
-
-### _limits
-Sets maximum file handles and forked processes.
-
 ## Authors
 * Mercedes Coyle (<me@mercedescoyle.com>)

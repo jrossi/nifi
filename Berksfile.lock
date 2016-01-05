@@ -14,7 +14,7 @@ GRAPH
   java (1.36.0)
     apt (>= 0.0.0)
   limits (1.0.0)
-  nifi (0.3.1)
+  nifi (0.3.2)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     java (>= 0.0.0)

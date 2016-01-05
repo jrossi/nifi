@@ -2,8 +2,6 @@
 # Cookbook Name:: nifi
 # Recipe:: server 
 #
-include_recipe 'nifi::_limits'
-include_recipe 'nifi::_sysctl'
 
 ark 'nifi' do
   url "#{node['nifi']['package_url']}"
