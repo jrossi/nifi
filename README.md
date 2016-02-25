@@ -1,5 +1,5 @@
 # Nifi
-This cookbook installs Nifi v0.4.0. For more details on Nifi installation, usage, and configuration best practices, check out the [Nifi Administration Guide](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html).
+This cookbook installs Nifi v0.4.1. For more details on Nifi installation, usage, and configuration best practices, check out the [Nifi Administration Guide](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html).
 
 ## Requirements
 ### depends
